@@ -273,7 +273,7 @@ var IN_GLOBAL_SCOPE = false;
     skinUrls.push(LOADER_BASE_URL
       + '/skins/' + encodeURIComponent(skins[i]) + '.css');
   }
-  skinUrls.push(LOADER_BASE_URL + '/prettify.css');
+  skinUrls.push('./themes/prettify.css');
   loadStylesheetsFallingBack(skinUrls);
 
   var prettyPrint = (function () {
@@ -360,7 +360,7 @@ var IN_GLOBAL_SCOPE = false;
      * }}
      * @const
      */
-    var PR;
+    // var PR;
 
     /**
      * Split {@code prettyPrint} into multiple timeouts so as not to interfere with
